@@ -1,75 +1,33 @@
-# Nuxt Minimal Starter
+# Finance Tracker
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A web app for tracking **income** and **expenses**. Users sign in with a username and password, add and manage their transactions, and see a dashboard with summaries and charts. An **admin** account can view all users and their financial totals.
 
-## Setup
+## How to run
 
-Make sure to install dependencies:
+1. Install dependencies:
 
-```bash
-# npm
-npm install
+   ```bash
+   npm install
+   ```
 
-# pnpm
-pnpm install
+2. Start Convex (keep this terminal open):
 
-# yarn
-yarn install
+   ```bash
+   npx convex dev
+   ```
 
-# bun
-bun install
-```
+3. Create `.env.local` in the project root with your Convex URL (the CLI usually adds this after step 2):
 
-## Development Server
+   ```env
+   CONVEX_URL=https://your-deployment.convex.cloud
+   ```
 
-Start the development server on `http://localhost:3000`:
+4. In another terminal, start the app:
 
-```bash
-# npm
-npm run dev
+   ```bash
+   npm run dev
+   ```
 
-# pnpm
-pnpm dev
+5. Open [http://localhost:3000](http://localhost:3000).
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+**Admin login (demo):** username `admin`, password `admin123`. Other accounts can be created on the Register page.
